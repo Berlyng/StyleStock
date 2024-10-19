@@ -5,13 +5,34 @@
 }
 
 <div class="row">
-	<div class="col-8 ">
+	<div class="col-6 ">
 		<h2>Nuevo Suplidor</h2>
-		<form asp-controller="Suppliers" asp-action="CreateSuppliers" method="post"></form>
-		<div class="mb-5">
-			<lable >Nombre Suplidor</lable>
-			<input class="form-control" asp-for="Name" type="text"/>
-		</div>
-	</div>
+		<form asp-controller="Suppliers" asp-action="CreateSuppliers" method="post">
+			<div class="mb-2">
+				<lable for="name" class="form-label">Nombre Suplidor</lable>
+				<input class="form-control" asp-for="Name" id="name" type="text" placeholder="Nombre" />
+			</div>
 
+			<div class="mb-2">
+				<lable for="phone" class="form-label">Telefono del suplidor</lable>
+				<input class="form-control" asp-for="Phone" id="phone" type="text" placeholder="Telefono" />
+			</div>
+
+			<div class="mb-2">
+				<lable for="email" class="form-label">Correo electronico del suplidor</lable>
+				<input class="form-control" asp-for="Email" id="email" type="text" placeholder="Correo Electronico" />
+			</div>
+
+			<div class="mb-2">
+				<lable for="adress" class="form-label">Direccion del suplidor</lable>
+				<input class="form-control" asp-for="Adress" id="adress" type="text" placeholder="Direccion" />
+			</div>
+
+			<div class="mb-3">
+				<button class="btn btn-primary" type="submit">Guardar</button>
+				<a asp-controller="Suppliers" asp-action="Index" class="btn btn-danger">Cancelar</a>
+			</div>
+		</form>
+	</div>
 </div>
+
