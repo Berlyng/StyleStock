@@ -1,0 +1,36 @@
+﻿@using StyleStock.Domain.Entities
+@model List<Suppliers>
+
+@{
+    ViewData["Title"] = "Suplidores";
+}
+
+<div class="row">
+    <div class="col-8">
+        <h2>Lista de Suplidores</h2>
+        <table class="table table-bordered">
+            <a asp-controller="Suppliers" asp-action="CreateSuppliers" class="btn btn-success mb-3">Nuevo Suplidor</a>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Direccion</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.SupplierID</td>
+                        <td>@item.Name</td>
+                        <td>@item.Phone</td>
+                        <td>@item.Email</td>
+                        <td>@item.Adress</td> 
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

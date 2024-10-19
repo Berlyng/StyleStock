@@ -1,0 +1,17 @@
+﻿@using StyleStock.Domain.DTOS
+@model CreateSuppliersDTO
+@{
+	ViewData["Title"] = "Agregar Suplidor";
+}
+
+<div class="row">
+	<div class="col-8 ">
+		<h2>Nuevo Suplidor</h2>
+		<form asp-controller="Suppliers" asp-action="CreateSuppliers" method="post"></form>
+		<div class="mb-5">
+			<lable >Nombre Suplidor</lable>
+			<input class="form-control" asp-for="Name" type="text"/>
+		</div>
+	</div>
+
+</div>

@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using StyleStock.Domain;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<StyleStockDbContext>(p =>
+    p.UseSqlServer(builder.Configuration.GetConnectionString("StyleStockStringDb")));
 
 var app = builder.Build();
 
@@ -22,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Suppliers}/{action=Index}/{id?}");
 
 app.Run();

@@ -1,0 +1,15 @@
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\bin\Debug\net8.0\StyleStock.Domain.deps.json
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\bin\Debug\net8.0\StyleStock.Domain.runtimeconfig.json
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\bin\Debug\net8.0\StyleStock.Domain.dll
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\bin\Debug\net8.0\StyleStock.Domain.pdb
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.csproj.AssemblyReference.cache
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.AssemblyInfo.cs
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.sourcelink.json
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.dll
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\refint\StyleStock.Domain.dll
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.pdb
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\StyleStock.Domain.genruntimeconfig.cache
+C:\Users\Administrador\source\repos\StyleStock\StyleStock.Domain\obj\Debug\net8.0\ref\StyleStock.Domain.dll
