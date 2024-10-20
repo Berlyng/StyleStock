@@ -14,8 +14,8 @@ namespace StyleStock.Domain.DTOS
  
         [Required]
         public string Name { get; set; }
+
         [Required]
-        [Phone]
         public string Phone { get; set; }
         [Required]
         [EmailAddress]
