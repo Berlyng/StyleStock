@@ -27,10 +27,39 @@
                         <td>@item.Name</td>
                         <td>@item.Phone</td>
                         <td>@item.Email</td>
-                        <td>@item.Adress</td> 
+                        <td>@item.Adress</td>
+
+                        <td>
+                            <a asp-controller="Suppliers"
+                               asp-action="SuppliersEdit"
+                               asp-route-id="@item.SupplierID"
+                               class="btn btn-primary mb-3">
+                                Editar
+                            </a>
+                        </td>
+
+                        <td>
+                            <a asp-controller="Suppliers"
+                               asp-action="SuppliersDelete"
+                               asp-route-id="@item.SupplierID"
+                               onclick="return Confirmar()"
+                               class="btn btn-danger mb-3">
+                                Eliminar
+                            </a>
+
+                        </td>
                     </tr>
                 }
             </tbody>
         </table>
     </div>
 </div>
+
+
+@section Scripts{
+	<script>
+		function Confirmar() {
+			return confirm("Esta seguro que desea elimimar?")
+		}
+	</script>
+}

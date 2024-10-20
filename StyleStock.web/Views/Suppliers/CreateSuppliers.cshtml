@@ -10,22 +10,22 @@
 		<form asp-controller="Suppliers" asp-action="CreateSuppliers" method="post">
 			<div class="mb-2">
 				<lable for="name" class="form-label">Nombre Suplidor</lable>
-				<input class="form-control" asp-for="Name" id="name" type="text" placeholder="Nombre" />
+				<input class="form-control" asp-for="Name" id="name" type="text" placeholder="Nombre" required/>
 			</div>
 
 			<div class="mb-2">
 				<lable for="phone" class="form-label">Telefono del suplidor</lable>
-				<input class="form-control" asp-for="Phone" id="phone" type="text" placeholder="Telefono" />
+				<input class="form-control" asp-for="Phone" id="phone" type="text" placeholder="Telefono" required />
 			</div>
 
 			<div class="mb-2">
 				<lable for="email" class="form-label">Correo electronico del suplidor</lable>
-				<input class="form-control" asp-for="Email" id="email" type="text" placeholder="Correo Electronico" />
+				<input class="form-control" asp-for="Email" id="email" type="text" placeholder="Correo Electronico" required />
 			</div>
 
 			<div class="mb-2">
 				<lable for="adress" class="form-label">Direccion del suplidor</lable>
-				<input class="form-control" asp-for="Adress" id="adress" type="text" placeholder="Direccion" />
+				<input class="form-control" asp-for="Adress" id="adress" type="text" placeholder="Direccion"  required/>
 			</div>
 
 			<div class="mb-3">

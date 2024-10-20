@@ -1,0 +1,43 @@
+﻿@using StyleStock.Domain.DTOS
+@model UpdateSuppliersDTO
+@{
+	ViewData["Title"] = "Modificar Suplidor";
+}
+
+<div class="row">
+	<div class="col-6">
+		<h2>Modificar Suplidor</h2>
+
+
+		<form asp-controller="Suppliers" asp-action="SuppliersEdit" method="post">
+
+
+			<input type="hidden" asp-for="SupplierID" />
+
+			<div class="mb-2">
+				<label for="name" class="form-label">Nombre del Suplidor</label>
+				<input class="form-control" asp-for="Name" id="name" type="text" placeholder="Nombre" required />
+			</div>
+
+			<div class="mb-2">
+				<label for="phone" class="form-label">Teléfono del Suplidor</label>
+				<input class="form-control" asp-for="Phone" id="phone" type="text" placeholder="Teléfono" required />
+			</div>
+
+			<div class="mb-2">
+				<label for="email" class="form-label">Correo Electrónico del Suplidor</label>
+				<input class="form-control" asp-for="Email" id="email" type="email" placeholder="Correo Electrónico" required />
+			</div>
+
+			<div class="mb-2">
+				<label for="address" class="form-label">Dirección del Suplidor</label>
+				<input class="form-control" asp-for="Adress" id="address" type="text" placeholder="Dirección" required />
+			</div>
+
+			<div class="mb-3">
+				<button class="btn btn-primary" type="submit">Guardar</button>
+				<a asp-controller="Suppliers" asp-action="Index" class="btn btn-danger">Cancelar</a>
+			</div>
+		</form>
+	</div>
+</div>
