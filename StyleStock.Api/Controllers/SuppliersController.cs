@@ -73,10 +73,10 @@ namespace StyleStock.Api.Controllers
             }
 
 
-            supplier.Name = updateSuppliers.Name ?? supplier.Name;
-            supplier.Phone = updateSuppliers.Phone ?? supplier.Phone;
-            supplier.Email = updateSuppliers.Email ?? supplier.Email;
-            supplier.Adress = updateSuppliers.Adress ?? supplier.Adress;
+            supplier.Name = updateSuppliers.Name;
+            supplier.Phone = updateSuppliers.Phone;
+            supplier.Email = updateSuppliers.Email;
+            supplier.Adress = updateSuppliers.Adress;
 
 
             _context.Suppliers.Update(supplier);
