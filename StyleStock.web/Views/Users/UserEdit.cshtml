@@ -1,0 +1,46 @@
+﻿@using StyleStock.Domain.DTOS
+@model UpdateUsersDTO;
+@{
+	ViewData["Title"] = "Actualizar Usuarios";
+}
+
+<div class="row">
+	<div class="col-6 ">
+		<h2>Actualizar Usuario</h2>
+
+		<form asp-controller="Users" asp-action="UserEdit" method="post">
+			<div class="mb-2">
+				<label for="name" class="form-label">Nombre </label>
+				<input class="form-control" asp-for="FirstName" id="name" type="text" placeholder="Nombre" required />
+			</div>
+
+			<div class="mb-2">
+				<label for="LastName" class="form-label">Apellido</label>
+				<input class="form-control" asp-for="LastName" id="LastName" type="text" placeholder="Apellido" required />
+			</div>
+
+			<div class="mb-2">
+				<label for="email" class="form-label">Correo electronico</label>
+				<input class="form-control " asp-for="Email" id="email" type="email" placeholder="Correo Electronico" required />
+			</div>
+
+			<div class="mb-2">
+				<label for="password" class="form-label">Contraseña</label>
+				<input class="form-control" asp-for="PasswordHash" id="password" type="password" placeholder="Contraseña" />
+			</div>
+
+			<div class="mb-2">
+				<label for="rol" class="form-label">Rol</label>
+				<select class="form-control" asp-for="Role" id="rol" required>
+					<option value="Admin">Admin</option>
+					<option value="Usuario">Usuario</option>
+				</select>
+			</div>
+
+			<div class="mb-3">
+				<button class="btn btn-primary" type="submit">Guardar</button>
+				<a asp-controller="Users" asp-action="Index" class="btn btn-danger">Cancelar</a>
+			</div>
+		</form>
+	</div>
+</div>

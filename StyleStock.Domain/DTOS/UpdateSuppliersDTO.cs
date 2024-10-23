@@ -13,9 +13,5 @@ namespace StyleStock.Domain.DTOS
 		[Key]
         public int SupplierID { get; set; }
 
-		public static implicit operator UpdateSuppliersDTO(Suppliers v)
-		{
-			throw new NotImplementedException();
-		}
 	}
 }

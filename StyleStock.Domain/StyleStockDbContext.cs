@@ -12,6 +12,7 @@ namespace StyleStock.Domain
     public class StyleStockDbContext : DbContext
     {
 		public DbSet<Suppliers> Suppliers { get; set; }
+        public DbSet<Users> Users { get; set; }
 		public StyleStockDbContext(DbContextOptions<StyleStockDbContext> options) : base(options)
         {
 

@@ -1,0 +1,64 @@
+﻿@using StyleStock.Domain.Entities
+@model List<Users>
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<div class="row">
+    <div class="col-8">
+        <h2>Lista de Usuarios</h2>
+        <table class="table table-bordered">
+            <a asp-controller="Users" asp-action="CreateUser" class="btn btn-success mb-3">Nuevo Usuario</a>
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.UserID</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.Email</td>
+                        <td>@item.Role</td>
+                        <td>
+                            <a asp-controller="Users"
+                               asp-action="UserEdit"
+                               asp-route-id="@item.UserID"
+                               class="btn btn-primary mb-3">
+                                Editar
+                            </a>
+                        </td>
+
+@*                         <td>
+                            <a asp-controller="Suppliers"
+                               asp-action="SuppliersDelete"
+                               asp-route-id="@item.SupplierID"
+                               onclick="return Confirmar()"
+                               class="btn btn-danger mb-3">
+                                Eliminar
+                            </a>
+
+                        </td> *@
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@* @section Scripts {
+    <script>
+        function Confirmar() {
+            return confirm("Esta seguro que desea elimimar?")
+        }
+    </script>
+} *@

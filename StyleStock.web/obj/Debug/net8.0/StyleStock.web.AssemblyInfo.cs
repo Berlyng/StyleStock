@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StyleStock.web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+670a8654571deae201caed574c2a0e8bb336d87c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80905e86471015f87c9c42d02e85149775c60ce5")]
 [assembly: System.Reflection.AssemblyProductAttribute("StyleStock.web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StyleStock.web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
